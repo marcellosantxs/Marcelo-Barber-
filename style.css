@@ -1,5 +1,5 @@
 body {
-    background-image: url('caminho/para/sua/imagem.png');
+    background-image: url('imagem.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

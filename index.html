@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Barber</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?barbershop') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #d32f2f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 400px;
+        }
+        button {
+            background: #d32f2f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>Marcelo Barber</header>
+    
+    <section>
+        <h2>Endereço</h2>
+        <p>Povoado São José</p>
+    </section>
+    
+    <section>
+        <h2>Horário de Funcionamento</h2>
+        <p>Segunda a Domingo: 08:00 - 17:00</p>
+    </section>
+    
+    <section>
+        <h2>Preços</h2>
+        <p>Corte de Cabelo: R$20,00</p>
+        <p>Corte + Barba: R$25,00</p>
+    </section>
+    
+    <section>
+        <h2>Agendamento</h2>
+        <form action="https://formspree.io/f/marcellosantx@gmail.com" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="datetime-local" name="data" required>
+            <input type="tel" name="telefone" placeholder="Seu Telefone" required>
+            <button type="submit" class="button">Agendar</button>
+        </form>
+    </section>
+</body>
+</html>

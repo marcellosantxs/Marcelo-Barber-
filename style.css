@@ -1,4 +1,6 @@
-body {background-image: url('imagem.png');
+body {
+    background-image: url('imagem.png'); /* Certifique-se de que a imagem está no caminho correto */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+}
